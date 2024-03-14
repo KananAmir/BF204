@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      width: 100%;
+      height: 100vh;
+      background-image: url("./beautiful-beach-road-thailand-260nw-1842292948.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    img {
+      width: 200px;
+      position: absolute;
+      bottom: 150px;
+      animation: car;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      left: 0;
+    }
+
+    @keyframes car {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: 1200px;
+      }
+      100% {
+        left: 0;
+        transform: rotateY(180deg);
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <img src="vintage-car-png.webp" alt="" />
+    </div>
+  </body>
+</html>
