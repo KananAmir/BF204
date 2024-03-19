@@ -1,0 +1,23 @@
+#hero-banner {
+  height: 100vh;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flex();
+
+  .hero-banner {
+    text-align: center;
+
+    h2 {
+      color: $color-white;
+      margin: 20px 0;
+    }
+    h3 {
+      color: $color-white;
+    }
+    button {
+      @extend %primary-btn;
+    }
+  }
+}

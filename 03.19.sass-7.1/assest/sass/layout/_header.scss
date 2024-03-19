@@ -1,0 +1,29 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $secondary-color;
+  .header {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    @include flex(space-between);
+    padding: 20px 0;
+    .logo {
+      width: 150px;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: $color-white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
