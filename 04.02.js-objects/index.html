@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //object litheral
+      let user = {
+        username: "lorem ipsum",
+        email: "lorem@gmail.com",
+      };
+
+      let obj = new Object();
+
+      function Human(firstName, lastName) {
+        (this.firstName = firstName), (this.lastName = lastName);
+      }
+
+      console.log(obj);
+      //constructure
+      function User(username, email, age, password = "1234") {
+        (this.username = username),
+          (this.email = email),
+          (this.password = password),
+          (this.age = age);
+
+        this.getInfo = function () {
+          return `My name is ${this.username}, I am ${this.age}`;
+        };
+      }
+      console.log(user);
+
+      const khayal = new User("Khayal_Sadiqov", "khayal@code.edu.az", 20);
+      const aysel = new User("aysel", "aysel@code.edu.az", 20);
+
+      console.log(aysel.getInfo());
+
+      ///////////////////////
+
+      Object.setPrototypeOf(khayal, new Human("Khayal", "Sadiqov"));
+      console.log(khayal);
+    </script>
+  </body>
+</html>
