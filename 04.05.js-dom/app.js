@@ -47,6 +47,9 @@ const students = [
 
 const wrapper = document.querySelector(".wrapper");
 
+
+
+
 const studentsList = document.createElement("ul");
 students.forEach((item) => {
   const liElem = document.createElement("li");
