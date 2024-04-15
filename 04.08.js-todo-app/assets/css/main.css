@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(97, 213, 210);
+  background: linear-gradient(
+    43deg,
+    rgba(97, 213, 210, 1) 0%,
+    rgba(83, 163, 221, 1) 47%,
+    rgba(77, 140, 226, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.todo-wrapper {
+  width: 33%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.add-btn,
+.clear-btn {
+  background-color: #8e48e6;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+}
+ul {
+  margin: 0;
+  padding: 0 !important;
+  max-height: 400px;
+  overflow-y: auto;
+}
+ul li {
+  list-style: none;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
