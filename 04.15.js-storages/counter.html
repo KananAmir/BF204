@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="inc">+</button>
+    <span class="result">0</span>
+    <button class="dec">-</button>
+
+    <br />
+    <br />
+    <button class="reset">Reset</button>
+
+    <script>
+      const inc = document.querySelector(".inc");
+      const dec = document.querySelector(".dec");
+      const result = document.querySelector(".result");
+      const reset = document.querySelector(".reset");
+      let count = localStorage.getItem("count") || 0;
+      result.textContent = count;
+
+      inc.addEventListener("click", function () {
+        count++;
+        result.textContent = count;
+        localStorage.setItem("count", count);
+      });
+      dec.addEventListener("click", function () {
+        count--;
+        result.textContent = count;
+        localStorage.setItem("count", count);
+      });
+      reset.addEventListener("click", function () {
+        count = 0;
+        result.textContent = count;
+        localStorage.setItem("count", count);
+      });
+    </script>
+  </body>
+</html>

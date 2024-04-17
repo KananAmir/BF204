@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  background: rgb(97, 213, 210);
+  background: linear-gradient(
+    43deg,
+    rgba(97, 213, 210, 1) 0%,
+    rgba(83, 163, 221, 1) 48%,
+    rgba(77, 140, 226, 1) 100%
+  );
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-right: 15px;
+}
+main{
+    padding-top: 150px;
+}

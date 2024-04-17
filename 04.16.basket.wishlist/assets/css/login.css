@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-form{
+    width: 35%;
+}
+#login-form form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    width: 100%;
+    padding: 50px 30px;
+}
+#login-form form input{
+    margin-bottom: 14px;
+}
