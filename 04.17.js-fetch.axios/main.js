@@ -1,4 +1,4 @@
-import { BASE_URL } from "./constant.js";
+import { BASE_URL } from "./project/constant.js";
 
 const lists = document.querySelector(".lists");
 async function getData(endpoint) {
@@ -18,3 +18,13 @@ function drawLists(array) {
     lists.append(listElem);
   });
 }
+
+function getAllData(endpoint, id) {
+  let movies = [];
+  axios.get(`${BASE_URL}/${endpoint}`).then((a) => {
+    // console.log(a.data);
+  });
+  return movies;
+}
+
+console.log(getAllData("suppliers"));
