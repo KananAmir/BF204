@@ -39,7 +39,7 @@ const deleteDataById = async (id) => {
 const addNewCustomer = async (payload) => {
   try {
     const response = axios.post(`${BASE_URL}/customers`, payload);
-    return (await response).data;
+    return response;
   } catch (error) {
     console.log(error.message);
   }
@@ -49,7 +49,7 @@ const addNewCustomer = async (payload) => {
 const updateCustomerById = async (id, payload) => {
   try {
     const response = axios.put(`${BASE_URL}/customers/${id}`, payload);
-    return (await response).data;
+    return response;
   } catch (error) {
     console.log(error.message);
   }
