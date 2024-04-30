@@ -15,14 +15,15 @@ function Todo() {
   return (
     <>
       <h2>Todo React App</h2>
-      <AddToDo todos={todos} setTodos={setTodos}/>
+      <AddToDo todos={todos} setTodos={setTodos} />
       <hr />
-      <SearchToDo setSearchQuery = {setSearchQuery}/>
+      <SearchToDo setSearchQuery={setSearchQuery} />
       <h3>Todo List</h3>
       <TodoList>
-        {filteredTodos && filteredTodos.map((todo)=>{
-            return <TodoItem key={todo.id} todo={todo} setTodos={setTodos}/>
-        })}
+        {filteredTodos &&
+          filteredTodos.map((todo) => {
+            return <TodoItem key={todo.id} todo={todo} setTodos={setTodos} />;
+          })}
       </TodoList>
     </>
   );
