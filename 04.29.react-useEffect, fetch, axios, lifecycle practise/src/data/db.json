@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "productName": "lenova",
+      "price": 45,
+      "isDiscount": false
+    },
+    {
+      "id": "3",
+      "productName": "dell",
+      "price": 87,
+      "isDiscount": false
+    }
+  ]
+}
