@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Shoulder Bag Leather Bag Leather undertakes laborious physical physical",
+      "price": 130,
+      "isNew": true,
+      "discountPercent": 0,
+      "sellCount": 3,
+      "imgUrl": "../../../public/images/product1.png",
+      "star": 4
+    },
+    {
+      "id": "2",
+      "title": "Shoulder Bag Leather Bag Leather undertakes laborious physical physical",
+      "price": 200,
+      "isNew": false,
+      "discountPercent": 30,
+      "sellCount": 0,
+      "imgUrl": "../../../public/images/product2.png",
+      "star": 4
+    },
+    {
+      "id": "3",
+      "title": "Shoulder Bag Leather Bag Leather undertakes laborious physical physical",
+      "price": 200,
+      "isNew": false,
+      "discountPercent": 20,
+      "sellCount": 5,
+      "imgUrl": "../../../public/images/asus.png",
+      "star": 4
+    }
+  ]
+}
