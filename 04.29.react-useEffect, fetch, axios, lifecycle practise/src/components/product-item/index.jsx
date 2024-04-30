@@ -3,14 +3,15 @@ import DeleteProduct from "../delete-product";
 const ProductItem = ({ product, products, setProducts }) => {
   return (
     <li>
-      <span>
-        {product.productName}
+      <p>
+        <span>{product.productName}</span>
+        <i> $ {product.price} </i>
         <DeleteProduct
           product={product}
           products={products}
           setProducts={setProducts}
         />
-      </span>
+      </p>
     </li>
   );
 };

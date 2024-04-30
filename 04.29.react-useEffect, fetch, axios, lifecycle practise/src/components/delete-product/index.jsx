@@ -6,8 +6,8 @@ const DeleteProduct = ({ product, products, setProducts }) => {
     deleteDataById(id).then((response) => {
       //   console.log(response);
       if (response.status === 200) {
+        console.log(products);
         const filtered = products.filter((q) => q.id !== id);
-        // console.log(filtered);\
         setProducts(filtered);
       }
     });

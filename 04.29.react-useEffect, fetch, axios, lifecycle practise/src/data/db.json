@@ -1,15 +1,33 @@
 {
   "products": [
     {
+      "id": "1",
+      "productName": "asus",
+      "price": 2300,
+      "isDiscount": false
+    },
+    {
       "id": "2",
       "productName": "lenova",
-      "price": 45,
+      "price": 2000,
       "isDiscount": false
     },
     {
       "id": "3",
       "productName": "dell",
-      "price": 87,
+      "price": 1800,
+      "isDiscount": false
+    },
+    {
+      "id": "4",
+      "productName": "mac",
+      "price": 4500,
+      "isDiscount": false
+    },
+    {
+      "id": "5",
+      "productName": "hp",
+      "price": 1600,
       "isDiscount": false
     }
   ]
